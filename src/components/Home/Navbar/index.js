@@ -5,6 +5,7 @@ import {
   AiOutlineCompass,
   AiOutlineHeart,
   AiOutlineMessage,
+  AiOutlinePlusCircle,
   AiOutlineSearch
 } from 'react-icons/ai'
 
@@ -77,8 +78,8 @@ const Navbar = () => {
         <Link to="/search" className="main-header__mobile--action">
           <AiOutlineSearch size="1.5rem" />
         </Link>
-        <Link to="/explore" className="main-header__mobile--action">
-          <AiOutlineCompass size="1.5rem" />
+        <Link to="/add-post" className="main-header__mobile--action">
+          <AiOutlinePlusCircle size="1.5rem" />
         </Link>
         <Link to="/activity" className="main-header__mobile--action">
           <AiOutlineHeart size="1.5rem" />
