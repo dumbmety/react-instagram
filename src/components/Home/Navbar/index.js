@@ -74,8 +74,8 @@ const Navbar = () => {
         <Link to="/" className="main-header__mobile--action">
           <AiFillHome size="1.5rem" />
         </Link>
-        <Link to="/direct/inbox" className="main-header__mobile--action">
-          <AiOutlineMessage size="1.5rem" />
+        <Link to="/search" className="main-header__mobile--action">
+          <AiOutlineSearch size="1.5rem" />
         </Link>
         <Link to="/explore" className="main-header__mobile--action">
           <AiOutlineCompass size="1.5rem" />
