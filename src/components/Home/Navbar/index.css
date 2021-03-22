@@ -1,5 +1,5 @@
 #main-header {
-  @apply bg-white py-3 border-b border-gray-200;
+  @apply bg-white py-2 border-b border-gray-200;
 }
 .main-header__wrapper {
   @apply max-w-4xl mx-auto flex items-center justify-between;
