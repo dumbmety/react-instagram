@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
+  AiFillCloseCircle,
   AiFillHome,
   AiOutlineCompass,
   AiOutlineHeart,
@@ -12,6 +13,8 @@ import {
 import './index.css'
 
 const Navbar = () => {
+  const [openSearch, setOpenSearch] = useState(true)
+
   return (
     <>
       <header id="main-header">
@@ -22,14 +25,34 @@ const Navbar = () => {
                 <img src="/img/logo-type.png" alt="Instagram Logo" />
               </Link>
             </div>
-            <div>
-              <div className="main-header__search">
-                <div className="main-header__search--wrapper">
-                  <AiOutlineSearch size="0.9rem" />
-                  <span>Search</span>
+            <div className="flex justify-center">
+              {openSearch ? (
+                <div className="flex justify-center w-8/12 relative">
+                  <AiOutlineSearch
+                    size="0.9rem"
+                    className="absolute left-2 text-gray-500"
+                    style={{ top: '50%', transform: 'translateY(-50%)' }}
+                  />
+                  <AiFillCloseCircle
+                    size="0.9rem"
+                    className="absolute right-2 text-gray-400"
+                    style={{ top: '50%', transform: 'translateY(-50%)' }}
+                  />
+                  <input
+                    type="text"
+                    className="bg-gray-50 text-sm pl-7 border border-gray-200 py-0.5 px-3 rounded w-full h-7 focus:outline-none"
+                    placeholder="Search"
+                  />
                 </div>
-                <div className="main-header__search--background" />
-              </div>
+              ) : (
+                <div className="main-header__search">
+                  <div className="main-header__search--wrapper">
+                    <AiOutlineSearch size="0.9rem" />
+                    <span>Search</span>
+                  </div>
+                  <div className="main-header__search--background" />
+                </div>
+              )}
             </div>
             <div>
               <ul className="main-header__links">
