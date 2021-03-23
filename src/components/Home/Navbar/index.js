@@ -28,20 +28,26 @@ const Navbar = () => {
                 <img src="/img/logo-type.png" alt="Instagram Logo" />
               </Link>
             </div>
-            <div
-              onClick={handleShowSearch}
-              className="main-header__desktop--search"
-            >
+            <div className="main-header__desktop--search">
               {openSearch ? (
                 <div id="search" className="main-header__search--open">
                   <AiOutlineSearch size="0.9rem" className="left-2" />
                   <button onClick={handleHideSearch} className="right-2">
                     <AiFillCloseCircle size="0.9rem" className="right-0" />
                   </button>
-                  <input type="text" placeholder="Search" />
+                  <input
+                    ref={element => {
+                      if (element) element.focus()
+                    }}
+                    type="text"
+                    placeholder="Search"
+                  />
                 </div>
               ) : (
-                <div className="main-header__search--close">
+                <div
+                  onClick={handleShowSearch}
+                  className="main-header__search--close"
+                >
                   <div className="main-header__search--close-wrapper">
                     <AiOutlineSearch size="0.9rem" />
                     <span>Search</span>
