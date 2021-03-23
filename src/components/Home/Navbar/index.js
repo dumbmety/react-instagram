@@ -36,9 +36,7 @@ const Navbar = () => {
                     <AiFillCloseCircle size="0.9rem" className="right-0" />
                   </button>
                   <input
-                    ref={element => {
-                      if (element) element.focus()
-                    }}
+                    ref={element => element && element.focus()}
                     type="text"
                     placeholder="Search"
                   />
