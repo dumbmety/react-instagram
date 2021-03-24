@@ -93,7 +93,7 @@ const Navbar = () => {
                 </li>
                 <li className="main-header__link">
                   <Link to="/profile" className="main-header__link--profile">
-                    <img src="/img/profile.jpeg" alt="Profile" />
+                    <img src="/img/users/neysidev.jpeg" alt="Mehdi Neysi" />
                   </Link>
                 </li>
               </ul>
