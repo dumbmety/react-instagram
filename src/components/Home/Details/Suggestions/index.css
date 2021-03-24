@@ -21,7 +21,7 @@
   @apply flex items-center justify-between;
 }
 .suggestions .user button {
-  @apply text-sm text-lightBlue-500 font-semibold;
+  @apply text-sm text-lightBlue-500 font-semibold focus:outline-none;
 }
 .suggestions .user__content {
   @apply flex items-center;
