@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  AiFillCloseCircle,
-  AiFillHome,
-  AiOutlineCompass,
-  AiOutlineHeart,
-  AiOutlineMessage,
-  AiOutlinePlusCircle,
-  AiOutlineSearch
-} from 'react-icons/ai';
+  IoSearchOutline,
+  IoCloseCircle,
+  IoHome,
+  IoChatbubbleOutline,
+  IoCompassOutline,
+  IoHeartOutline,
+  IoAddCircleOutline
+} from 'react-icons/io5';
 
 import './index.css';
 
@@ -45,9 +45,9 @@ const Navbar = () => {
             <div className="main-header__desktop--search">
               {openSearch ? (
                 <div id="search-open" className="main-header__search--open">
-                  <AiOutlineSearch size="0.9rem" className="left-2" />
+                  <IoSearchOutline size="0.9rem" className="left-2" />
                   <button onClick={handleHideSearch} className="right-2">
-                    <AiFillCloseCircle size="0.9rem" className="right-0" />
+                    <IoCloseCircle size="0.9rem" className="right-0" />
                   </button>
                   <input
                     ref={element => element && element.focus()}
@@ -62,7 +62,7 @@ const Navbar = () => {
                   className="main-header__search--close"
                 >
                   <div className="main-header__search--close-wrapper">
-                    <AiOutlineSearch size="0.9rem" />
+                    <IoSearchOutline size="0.9rem" />
                     <span>Search</span>
                   </div>
                   <div className="main-header__search--close-background" />
@@ -73,22 +73,22 @@ const Navbar = () => {
               <ul className="main-header__links">
                 <li className="main-header__link">
                   <Link to="/">
-                    <AiFillHome size="1.5rem" />
+                    <IoHome size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
                   <Link to="/direct/inbox">
-                    <AiOutlineMessage size="1.5rem" />
+                    <IoChatbubbleOutline size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
                   <Link to="/explore">
-                    <AiOutlineCompass size="1.5rem" />
+                    <IoCompassOutline size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
                   <Link to="/activity">
-                    <AiOutlineHeart size="1.5rem" />
+                    <IoHeartOutline size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
@@ -104,26 +104,26 @@ const Navbar = () => {
               <img src="/img/logo-type.png" alt="Instagram Logo" />
             </Link>
             <Link to="/direct/inbox">
-              <AiOutlineMessage size="1.5rem" />
+              <IoChatbubbleOutline size="1.5rem" />
             </Link>
           </div>
         </div>
       </header>
       <div id="main-header__mobile--actions">
         <Link to="/" className="main-header__mobile--action">
-          <AiFillHome size="1.5rem" />
+          <IoHome size="1.5rem" />
         </Link>
         <Link to="/search" className="main-header__mobile--action">
-          <AiOutlineSearch size="1.5rem" />
+          <IoSearchOutline size="1.5rem" />
         </Link>
         <Link to="/add-post" className="main-header__mobile--action">
-          <AiOutlinePlusCircle size="1.5rem" />
+          <IoAddCircleOutline size="1.5rem" />
         </Link>
         <Link to="/activity" className="main-header__mobile--action">
-          <AiOutlineHeart size="1.5rem" />
+          <IoHeartOutline size="1.5rem" />
         </Link>
         <Link to="/profile" className="main-header__mobile--action">
-          <img src="/img/profile.jpeg" alt="Profile" />
+          <img src="/img/users/neysidev.jpeg" alt="neysidev" />
         </Link>
       </div>
     </>
