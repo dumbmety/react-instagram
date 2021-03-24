@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   AiFillCloseCircle,
   AiFillHome,
@@ -8,18 +8,18 @@ import {
   AiOutlineMessage,
   AiOutlinePlusCircle,
   AiOutlineSearch
-} from 'react-icons/ai'
+} from 'react-icons/ai';
 
-import './index.css'
+import './index.css';
 
 const Navbar = () => {
-  const [openSearch, setOpenSearch] = useState(false)
+  const [openSearch, setOpenSearch] = useState(false);
 
-  const handleShowSearch = () => setOpenSearch(true)
-  const handleHideSearch = () => setOpenSearch(false)
+  const handleShowSearch = () => setOpenSearch(true);
+  const handleHideSearch = () => setOpenSearch(false);
 
   document.addEventListener('click', event => {
-    if (!document.querySelector('#search-open')) return
+    if (!document.querySelector('#search-open')) return;
 
     event.target.closest('.main-header__search--close') ||
     event.target.closest('.main-header__search--close-wrapper') ||
@@ -29,8 +29,8 @@ const Navbar = () => {
     event.target.closest('.main-header__search--open button') ||
     event.target.closest('.main-header__search--open input')
       ? handleShowSearch()
-      : handleHideSearch()
-  })
+      : handleHideSearch();
+  });
 
   return (
     <>
@@ -127,7 +127,7 @@ const Navbar = () => {
         </Link>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
