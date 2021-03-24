@@ -5,7 +5,7 @@ import Story from './Story';
 
 const Main = () => {
   return (
-    <main className="w-8/12 pr-5">
+    <main className="w-full px-3 lg:w-8/12 lg:pr-5">
       <Story />
       <Posts />
     </main>

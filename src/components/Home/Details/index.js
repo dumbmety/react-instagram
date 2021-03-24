@@ -6,7 +6,7 @@ import Footer from './Footer';
 
 const Details = () => {
   return (
-    <aside className="w-4/12">
+    <aside className="hidden lg:block w-4/12">
       <Profile />
       <Suggestions />
       <Footer />
