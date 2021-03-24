@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  IoBookmarkOutline,
-  IoChatbubbleOutline,
-  IoEllipsisHorizontalSharp,
-  IoHappyOutline,
-  IoHeartOutline,
-  IoShareSocialOutline
-} from 'react-icons/io5';
+  RiBookmarkLine,
+  RiChat3Line,
+  RiHeart3Line,
+  RiSendPlaneLine,
+  RiMoreFill,
+  RiEmotionHappyLine
+} from 'react-icons/ri';
 
 import './index.css';
 
@@ -24,7 +24,7 @@ const Post = ({ name, username, imgName, likes, time }) => {
           <span className="post__username">{username}</span>
         </Link>
         <button className="post__menu">
-          <IoEllipsisHorizontalSharp size="1.2rem" />
+          <RiMoreFill size="1.2rem" />
         </button>
       </header>
       <div>
@@ -38,17 +38,17 @@ const Post = ({ name, username, imgName, likes, time }) => {
         <div className="post__actions">
           <div className="post__actions--left">
             <button className="post__action">
-              <IoHeartOutline size="1.5rem" />
+              <RiHeart3Line size="1.5rem" />
             </button>
             <button className="post__action">
-              <IoChatbubbleOutline size="1.5rem" />
+              <RiChat3Line size="1.5rem" />
             </button>
             <button className="post__action">
-              <IoShareSocialOutline size="1.5rem" />
+              <RiSendPlaneLine size="1.5rem" />
             </button>
           </div>
           <button className="post__action">
-            <IoBookmarkOutline size="1.5rem" />
+            <RiBookmarkLine size="1.5rem" />
           </button>
         </div>
         <Link to="/" className="post__likes">
@@ -60,7 +60,7 @@ const Post = ({ name, username, imgName, likes, time }) => {
       </footer>
       <form className="addComment">
         <button type="button" className="addComment__emoji">
-          <IoHappyOutline size="1.5rem" />
+          <RiEmotionHappyLine size="1.5rem" />
         </button>
         <input
           type="text"
