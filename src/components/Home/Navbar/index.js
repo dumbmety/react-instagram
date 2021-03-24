@@ -18,6 +18,20 @@ const Navbar = () => {
   const handleShowSearch = () => setOpenSearch(true)
   const handleHideSearch = () => setOpenSearch(false)
 
+  document.addEventListener('click', event => {
+    if (!document.querySelector('#search-open')) return
+
+    event.target.closest('.main-header__search--close') ||
+    event.target.closest('.main-header__search--close-wrapper') ||
+    event.target.closest('.main-header__search--close-background') ||
+    event.target.closest('.main-header__search--open') ||
+    event.target.closest('.main-header__search--open svg') ||
+    event.target.closest('.main-header__search--open button') ||
+    event.target.closest('.main-header__search--open input')
+      ? handleShowSearch()
+      : handleHideSearch()
+  })
+
   return (
     <>
       <header id="main-header">
@@ -30,7 +44,7 @@ const Navbar = () => {
             </div>
             <div className="main-header__desktop--search">
               {openSearch ? (
-                <div id="search" className="main-header__search--open">
+                <div id="search-open" className="main-header__search--open">
                   <AiOutlineSearch size="0.9rem" className="left-2" />
                   <button onClick={handleHideSearch} className="right-2">
                     <AiFillCloseCircle size="0.9rem" className="right-0" />
@@ -43,6 +57,7 @@ const Navbar = () => {
                 </div>
               ) : (
                 <div
+                  id="search-close"
                   onClick={handleShowSearch}
                   className="main-header__search--close"
                 >
