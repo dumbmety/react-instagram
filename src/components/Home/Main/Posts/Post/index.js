@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AiOutlineEllipsis } from 'react-icons/ai';
 import {
   IoBookmarkOutline,
   IoChatbubbleOutline,
+  IoEllipsisHorizontalSharp,
   IoHappyOutline,
   IoHeartOutline,
   IoShareSocialOutline
@@ -28,7 +28,7 @@ const Post = ({ name, username, imgName, likes, time }) => {
           </span>
         </Link>
         <button className="focus:outline-none">
-          <AiOutlineEllipsis size="1.5rem" />
+          <IoEllipsisHorizontalSharp size="1.2rem" />
         </button>
       </header>
       <div>
