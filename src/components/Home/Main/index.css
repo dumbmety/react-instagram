@@ -1,0 +1,3 @@
+#main {
+  @apply w-full px-3 lg:w-8/12 lg:pl-0 lg:pr-5;
+}
