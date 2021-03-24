@@ -1,0 +1,21 @@
+.profile {
+  @apply my-5 flex items-center justify-between;
+}
+.profile__image {
+  @apply bg-gray-300 p-0.5 rounded-full mr-5;
+}
+.profile__image--wrapper {
+  @apply bg-white p-0.5 rounded-full w-14 h-14 overflow-hidden;
+}
+.profile__image--wrapper img {
+  @apply w-full h-full object-cover rounded-full;
+}
+.profile__username {
+  @apply font-semibold text-sm;
+}
+.profile__name {
+  @apply font-semibold text-sm text-gray-400;
+}
+.profile__button {
+  @apply font-semibold text-sm text-lightBlue-500 focus:outline-none;
+}
