@@ -5,7 +5,7 @@ import './index.css';
 
 const Profile = () => {
   return (
-    <header className="profile">
+    <section className="profile">
       <div className="flex items-center">
         <Link to="/" className="profile__image">
           <div className="profile__image--wrapper">
@@ -20,7 +20,7 @@ const Profile = () => {
         </div>
       </div>
       <button className="profile__button">Switch</button>
-    </header>
+    </section>
   );
 };
 
