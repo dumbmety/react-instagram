@@ -1,11 +1,6 @@
 import React from 'react';
 
-import './index.css';
-
 const Story = ({ status, size, src, text }) => {
-  const imageWidth = `w-${size}`;
-  const imageHeight = `h-${size}`;
-
   let imageBackground;
   switch (status) {
     case 'unseen':
@@ -20,9 +15,13 @@ const Story = ({ status, size, src, text }) => {
   }
 
   return (
-    <div className={`image ${imageBackground}`}>
-      <div className={`image-wrapper ${imageWidth} ${imageHeight}`}>
-        <img src={`/img/${src}`} alt={text} />
+    <div className={`p-0.5 rounded-full ${imageBackground}`}>
+      <div className={`bg-white p-0.5 rounded-full w-${size} h-${size}`}>
+        <img
+          className="w-full h-full object-cover rounded-full"
+          src={`/img/${src}`}
+          alt={text}
+        />
       </div>
     </div>
   );

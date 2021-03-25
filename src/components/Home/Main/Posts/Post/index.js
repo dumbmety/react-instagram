@@ -11,7 +11,7 @@ const Post = ({ name, username, imgName, likes, time, status }) => {
         <Link to="/" className="post__account">
           <Story
             status={status}
-            size="10"
+            size={10}
             src={`users/${username}.jpg`}
             text={name}
           />
