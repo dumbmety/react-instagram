@@ -1,0 +1,38 @@
+/* Desktop */
+.main-header__desktop--search {
+  @apply flex justify-center;
+}
+
+/* Open */
+.main-header__search--open {
+  @apply flex justify-center w-8/12 relative;
+}
+.main-header__search--open svg,
+.main-header__search--open button {
+  @apply absolute text-gray-400;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-header__search--open input {
+  @apply bg-gray-50 text-sm px-7 border border-gray-200 py-0.5 px-3 rounded w-full h-7 focus:outline-none;
+}
+
+/* Close */
+.main-header__search--close {
+  @apply w-8/12 flex justify-center relative select-none cursor-text;
+}
+.main-header__search--close-wrapper {
+  @apply absolute flex items-center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-header__search--close-wrapper svg {
+  @apply text-gray-400;
+}
+.main-header__search--close-wrapper span {
+  @apply text-sm ml-1 text-gray-400;
+}
+.main-header__search--close-background {
+  @apply w-full bg-gray-50 border border-gray-200 py-0.5 px-3 rounded w-9/12 h-7;
+}
