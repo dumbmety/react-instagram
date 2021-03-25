@@ -11,6 +11,7 @@ const Posts = () => {
         name="Faizur Rehman"
         username="fazurrehman"
         imgName="e1c0bf86-c283-4d77-96c5-af2948131fdb"
+        state="unseen"
       />
       <Post
         likes="1,538"
@@ -18,6 +19,7 @@ const Posts = () => {
         name="UI/UX Migulko"
         username="ui_migulko"
         imgName="f3474bb2-6d63-485c-9745-a62b640fbc6f"
+        state="seen"
       />
       <Post
         likes="2,245"

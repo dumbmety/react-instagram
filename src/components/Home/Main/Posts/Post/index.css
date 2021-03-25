@@ -8,13 +8,7 @@
   @apply flex items-center;
 }
 .post .post__account .image {
-  @apply bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-0.5 mr-2 rounded-full;
-}
-.post .post__account .image__wrapper {
-  @apply bg-white p-0.5 rounded-full;
-}
-.post .post__account .image__wrapper img {
-  @apply w-8 h-8 object-cover rounded-full;
+  @apply mr-2;
 }
 .post__username {
   @apply font-semibold text-sm hover:underline;

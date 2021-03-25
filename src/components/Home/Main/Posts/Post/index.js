@@ -4,12 +4,17 @@ import { Link } from 'react-router-dom';
 import './index.css';
 import Story from '../../../../Elements/Story';
 
-const Post = ({ name, username, imgName, likes, time }) => {
+const Post = ({ name, username, imgName, likes, time, state }) => {
   return (
     <article className="post">
       <header className="post__header">
         <Link to="/" className="post__account">
-          <Story size="10" src={`users/${username}.jpg`} text={name} />
+          <Story
+            state={state}
+            size="10"
+            src={`users/${username}.jpg`}
+            text={name}
+          />
           <span className="post__username">{username}</span>
         </Link>
         <button className="post__menu">
