@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Profile from './Profile';
 import Suggestions from './Suggestions/Suggestions';
 import Footer from './Footer';

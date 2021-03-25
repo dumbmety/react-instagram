@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Posts from './Posts';
 import Story from './Story';
 
