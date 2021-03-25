@@ -14,6 +14,7 @@ const Story = ({ status, size, src, text }) => {
       imageBackground = 'bg-transparent';
       break;
   }
+           
 
   return (
     <div className={`p-0.5 rounded-full ${imageBackground}`}>
