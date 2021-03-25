@@ -2,9 +2,12 @@ import React from 'react';
 
 import './index.css';
 
-const Story = ({ state, size, src, text }) => {
+const Story = ({ status, size, src, text }) => {
+  const imageWidth = `w-${size}`;
+  const imageHeight = `h-${size}`;
+
   let imageBackground;
-  switch (state) {
+  switch (status) {
     case 'unseen':
       imageBackground = 'bg-gradient-to-tr from-yellow-400 to-fuchsia-600';
       break;
@@ -18,7 +21,7 @@ const Story = ({ state, size, src, text }) => {
 
   return (
     <div className={`image ${imageBackground}`}>
-      <div className={`image-wrapper w-${size} h-${size}`}>
+      <div className={`image-wrapper ${imageWidth} ${imageHeight}`}>
         <img src={`/img/${src}`} alt={text} />
       </div>
     </div>
