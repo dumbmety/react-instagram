@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import Story from '../../Elements/Story';
@@ -145,6 +146,16 @@ const Post = ({ name, username, imgName, likes, time, status }) => {
       </form>
     </article>
   );
+};
+
+Post.propTypes = {
+  name: PropTypes.string,
+  username: PropTypes.string,
+  imgUrl: PropTypes.string,
+  imgName: PropTypes.string,
+  likes: PropTypes.string,
+  time: PropTypes.string,
+  status: PropTypes.string
 };
 
 export default Post;
