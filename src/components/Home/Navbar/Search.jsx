@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Search = ({ hide, open, show }) => {
   let content;
@@ -84,6 +85,12 @@ const Search = ({ hide, open, show }) => {
   }
 
   return <div className="flex flex-1 justify-center">{content}</div>;
+};
+
+Search.propTypes = {
+  hide: PropTypes.func,
+  open: PropTypes.bool,
+  show: PropTypes.func
 };
 
 export default Search;
