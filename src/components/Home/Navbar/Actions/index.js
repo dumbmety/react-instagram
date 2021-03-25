@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './index.css';
+
 const Actions = () => {
   return (
     <div id="main-header__mobile--actions">

@@ -1,34 +1,3 @@
-.main-header__mobile {
-  @apply flex md:hidden justify-between;
-}
-
-.main-header__links {
-  @apply flex items-center justify-end;
-}
-.main-header__link {
-  @apply flex items-center ml-5;
-}
-.main-header__link:first-child {
-  @apply ml-0;
-}
-.main-header__link--profile {
-  @apply w-8 h-8 inline-block overflow-hidden rounded-full;
-}
-.main-header__link--profile img {
-  @apply w-full;
-}
-
-#main-header__mobile--actions {
-  @apply fixed bottom-0 left-0 w-full bg-white flex md:hidden items-center justify-between border-t border-gray-200;
-}
-.main-header__mobile--action {
-  @apply flex items-center justify-center inline-block hover:bg-gray-100 w-full h-full py-2;
-}
-#main-header__mobile--actions img {
-  @apply w-6 h-6 items-center rounded-full object-cover;
-}
-
-/* Navbar */
 #main-header {
   @apply bg-white py-2 border-b border-gray-200 fixed top-0 left-0 w-full;
 }
@@ -40,4 +9,7 @@
 }
 .main-header__desktop {
   @apply hidden md:flex;
+}
+.main-header__mobile {
+  @apply flex md:hidden justify-between;
 }
