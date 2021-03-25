@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  AiFillCloseCircle,
-  AiFillHeart,
-  AiFillHome,
-  AiOutlineCompass,
-  AiOutlineHeart,
-  AiOutlineMessage,
-  AiOutlineSearch
-} from 'react-icons/ai';
+  RiHome2Fill,
+  RiChat3Line,
+  RiCompass3Line,
+  RiHeart3Line,
+  RiCloseCircleFill,
+  RiSearchLine,
+  RiAddCircleLine
+} from 'react-icons/ri';
 
 import './index.css';
 
@@ -45,9 +45,9 @@ const Navbar = () => {
             <div className="main-header__desktop--search">
               {openSearch ? (
                 <div id="search-open" className="main-header__search--open">
-                  <AiOutlineSearch size="0.9rem" className="left-2" />
+                  <RiSearchLine size="0.9rem" className="left-2" />
                   <button onClick={handleHideSearch} className="right-2">
-                    <AiFillCloseCircle size="0.9rem" className="right-0" />
+                    <RiCloseCircleFill size="0.9rem" className="right-0" />
                   </button>
                   <input
                     ref={element => element && element.focus()}
@@ -62,7 +62,7 @@ const Navbar = () => {
                   className="main-header__search--close"
                 >
                   <div className="main-header__search--close-wrapper">
-                    <AiOutlineSearch size="0.9rem" />
+                    <RiSearchLine size="0.9rem" />
                     <span>Search</span>
                   </div>
                   <div className="main-header__search--close-background" />
@@ -73,22 +73,22 @@ const Navbar = () => {
               <ul className="main-header__links">
                 <li className="main-header__link">
                   <Link to="/">
-                    <AiFillHome size="1.5rem" />
+                    <RiHome2Fill size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
                   <Link to="/direct/inbox">
-                    <AiOutlineMessage size="1.5rem" />
+                    <RiChat3Line size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
                   <Link to="/explore">
-                    <AiOutlineCompass size="1.5rem" />
+                    <RiCompass3Line size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
                   <Link to="/activity">
-                    <AiOutlineHeart size="1.5rem" />
+                    <RiHeart3Line size="1.5rem" />
                   </Link>
                 </li>
                 <li className="main-header__link">
@@ -104,23 +104,23 @@ const Navbar = () => {
               <img src="/img/logo-type.png" alt="Instagram Logo" />
             </Link>
             <Link to="/direct/inbox">
-              <AiOutlineMessage size="1.5rem" />
+              <RiChat3Line size="1.5rem" />
             </Link>
           </div>
         </div>
       </header>
       <div id="main-header__mobile--actions">
         <Link to="/" className="main-header__mobile--action">
-          <AiFillHome size="1.5rem" />
+          <RiHome2Fill size="1.5rem" />
         </Link>
         <Link to="/search" className="main-header__mobile--action">
-          <AiOutlineSearch size="1.5rem" />
+          <RiSearchLine size="1.5rem" />
         </Link>
         <Link to="/add-post" className="main-header__mobile--action">
-          <AiFillCloseCircle size="1.5rem" />
+          <RiAddCircleLine size="1.5rem" />
         </Link>
         <Link to="/activity" className="main-header__mobile--action">
-          <AiFillHeart size="1.5rem" />
+          <RiHeart3Line size="1.5rem" />
         </Link>
         <Link to="/profile" className="main-header__mobile--action">
           <img src="/img/users/neysidev.jpeg" alt="neysidev" />
