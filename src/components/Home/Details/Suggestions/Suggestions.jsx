@@ -1,18 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Suggestion from './Suggestion';
+import SuggestionsHeader from './SuggestionsHeader';
+
+
 
 const Suggestions = () => {
   return (
-    <section className="mb-5">
-      <header className="mb-3 flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-gray-500">
-          Suggestions For You
-        </h2>
-        <Link to="/" className="text-sm text-gray-800">
-          See All
-        </Link>
-      </header>
+<section className="mb-5">
+  <SuggestionsHeader />
       <ul className="space-y-3">
         <Suggestion username="ryanswich" userImg="ryanswich" />
         <Suggestion username="jakobowsky" userImg="jakobowsky" />
