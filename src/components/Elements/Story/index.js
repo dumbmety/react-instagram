@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Story = ({ status, size, src, text }) => {
   let imageBackground;
@@ -28,6 +29,13 @@ const Story = ({ status, size, src, text }) => {
       </div>
     </div>
   );
+};
+
+Story.propTypes = {
+  status: PropTypes.string,
+  size: PropTypes.string,
+  src: PropTypes.string,
+  text: PropTypes.string
 };
 
 export default Story;
