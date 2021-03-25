@@ -7,11 +7,8 @@
 .post .post__account {
   @apply flex items-center;
 }
-.post .post__account .image {
-  @apply mr-2;
-}
 .post__username {
-  @apply font-semibold text-sm hover:underline;
+  @apply ml-2 font-semibold text-sm hover:underline;
 }
 .post__menu {
   @apply focus:outline-none;
