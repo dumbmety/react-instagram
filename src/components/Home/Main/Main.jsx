@@ -3,11 +3,9 @@ import React from 'react';
 import Posts from './Posts';
 import Story from './Story';
 
-import './index.css';
-
 const Main = () => {
   return (
-    <main id="main">
+    <main className="w-full px-3 lg:w-8/12 lg:pl-0 lg:pr-5">
       <Story />
       <Posts />
     </main>

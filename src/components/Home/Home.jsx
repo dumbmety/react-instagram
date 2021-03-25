@@ -1,16 +1,14 @@
 import React from 'react';
 
-import Navbar from './Navbar';
-import Details from './Details';
-import Main from './Main';
-
-import './index.css';
+import Navbar from './Navbar/Navbar';
+import Details from './Details/Details';
+import Main from './Main/Main';
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="main-content">
+      <div className="mt-20 max-w-4xl mx-auto flex">
         <Main />
         <Details />
       </div>

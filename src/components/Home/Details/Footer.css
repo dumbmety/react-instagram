@@ -1,10 +1,3 @@
-/* Links */
-#footer ul {
-  @apply mb-5;
-}
-#footer ul li {
-  @apply inline text-gray-400;
-}
 #footer ul li:after {
   content: '\00B7';
   margin: 0 0.25em;
@@ -15,9 +8,6 @@
 #footer ul li a {
   font-size: 11px;
 }
-
-/* Copyright */
 #footer p {
-  @apply text-gray-400 font-semibold uppercase;
   font-size: 11px;
 }

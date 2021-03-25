@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './index.css';
-
 const Links = () => {
   return (
-    <div>
-      <ul className="main-header__links">
-        <li className="main-header__link">
+    <div className="max-w-4xl mx-auto items-center px-5 lg:px-0 flex-1">
+      <ul className="flex items-center justify-end">
+        <li className="flex items-center">
           <Link to="/">
             <svg
               aria-label="Home"
@@ -20,7 +18,7 @@ const Links = () => {
             </svg>
           </Link>
         </li>
-        <li className="main-header__link">
+        <li className="flex items-center ml-5">
           <Link to="/direct/inbox">
             <svg
               aria-label="Direct"
@@ -33,7 +31,7 @@ const Links = () => {
             </svg>
           </Link>
         </li>
-        <li className="main-header__link">
+        <li className="flex items-center ml-5">
           <Link to="/explore">
             <svg
               aria-label="Find People"
@@ -50,7 +48,7 @@ const Links = () => {
             </svg>
           </Link>
         </li>
-        <li className="main-header__link">
+        <li className="flex items-center ml-5">
           <Link to="/activity">
             <svg
               aria-label="Activity Feed"
@@ -63,9 +61,16 @@ const Links = () => {
             </svg>
           </Link>
         </li>
-        <li className="main-header__link">
-          <Link to="/profile" className="main-header__link--profile">
-            <img src="/img/users/neysidev.jpeg" alt="Mehdi Neysi" />
+        <li className="flex items-center ml-5">
+          <Link
+            to="/profile"
+            className="w-8 h-8 inline-block overflow-hidden rounded-full"
+          >
+            <img
+              className="w-full"
+              src="/img/users/neysidev.jpeg"
+              alt="Mehdi Neysi"
+            />
           </Link>
         </li>
       </ul>

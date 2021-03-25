@@ -6,8 +6,6 @@ import Logo from './Logo';
 import Mobile from './Mobile';
 import Search from './Search';
 
-import './index.css';
-
 const Navbar = () => {
   const [openSearch, setOpenSearch] = useState(false);
 
@@ -17,22 +15,22 @@ const Navbar = () => {
   document.addEventListener('click', event => {
     if (!document.querySelector('#search-open')) return;
 
-    event.target.closest('.main-header__search--close') ||
-    event.target.closest('.main-header__search--close-wrapper') ||
-    event.target.closest('.main-header__search--close-background') ||
-    event.target.closest('.main-header__search--open') ||
-    event.target.closest('.main-header__search--open svg') ||
-    event.target.closest('.main-header__search--open button') ||
-    event.target.closest('.main-header__search--open input')
+    event.target.closest('#search-close') ||
+    event.target.closest('#search-close-wrapper') ||
+    event.target.closest('#search-close-background') ||
+    event.target.closest('#search-open') ||
+    event.target.closest('#search-open svg') ||
+    event.target.closest('#search-open button') ||
+    event.target.closest('#search-open input')
       ? handleShowSearch()
       : handleHideSearch();
   });
 
   return (
     <>
-      <header id="main-header">
+      <header className="bg-white py-2 border-b border-gray-200 fixed top-0 left-0 w-full">
         <div className="main-header__wrapper">
-          <div className="main-header__desktop">
+          <div className="hidden md:flex max-w-4xl mx-auto items-center px-5 lg:px-0">
             <Logo />
             <Search
               hide={handleHideSearch}
