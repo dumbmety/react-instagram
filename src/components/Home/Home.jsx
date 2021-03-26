@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Navbar from './Navbar/Navbar';
 import Details from './Details/Details';
 import Main from './Main/Main';

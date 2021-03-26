@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const Story = ({ status, size, src, text }) => {
@@ -14,6 +13,7 @@ const Story = ({ status, size, src, text }) => {
       imageBackground = 'bg-transparent';
       break;
   }
+           
 
   return (
     <div className={`p-0.5 rounded-full ${imageBackground}`}>
