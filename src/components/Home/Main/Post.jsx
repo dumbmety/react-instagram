@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 
 import Story from '../../Elements/Story';
 
-const Post = ({ name, username, profilePicture, imgName, likes, time, status }) => {
+const Post = ({
+  name,
+  username,
+  profilePicture,
+  imgName,
+  likes,
+  time,
+  status
+}) => {
   console.log(profilePicture);
   return (
     <article className="bg-white rounded border border-gray-200 mb-5">
@@ -12,7 +20,7 @@ const Post = ({ name, username, profilePicture, imgName, likes, time, status }) 
           <Story
             status={status}
             size="2.5rem"
-            src={profilePicture}
+            src={`users/${username}.jpg`}
             text={name}
           />
           <span className="ml-2 font-semibold text-sm hover:underline">

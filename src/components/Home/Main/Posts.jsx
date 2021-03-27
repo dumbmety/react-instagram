@@ -1,5 +1,4 @@
 import Post from './Post';
-import fazurrehmanPic from '../../../assets/img/users/fazurrehman.jpg';
 const Posts = () => {
   return (
     <section>
@@ -9,7 +8,6 @@ const Posts = () => {
         name="Faizur Rehman"
         username="fazurrehman"
         imgName="e1c0bf86-c283-4d77-96c5-af2948131fdb"
-        profilePicture={fazurrehmanPic}
         status="unseen"
       />
       <Post
