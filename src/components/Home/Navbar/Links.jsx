@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import UserPicture from '../../../assets/img/users/neysidev.jpeg'
 const Links = () => {
   return (
     <div className="max-w-4xl mx-auto items-center px-5 lg:px-0 flex-1">
@@ -65,11 +65,7 @@ const Links = () => {
             to="/profile"
             className="w-8 h-8 inline-block overflow-hidden rounded-full"
           >
-            <img
-              className="w-full"
-              src="/img/users/neysidev.jpeg"
-              alt="Mehdi Neysi"
-            />
+            <img className="w-full" alt="Mehdi Neysi" src={UserPicture} />
           </Link>
         </li>
       </ul>
