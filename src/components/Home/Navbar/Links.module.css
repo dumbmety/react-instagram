@@ -1,0 +1,3 @@
+.ProfilePicture span:focus {
+  border: 3px solid #212121;
+}
