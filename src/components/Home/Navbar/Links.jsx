@@ -1,6 +1,16 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import classes from './Links.module.css';
+import Menu from './Menu';
 
 const Links = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const handleCloseMenu = () => {
+    setShowMenu(false);
+  };
+  const handleOpenMenu = () => {
+    setShowMenu(true);
+  };
   return (
     <div className="max-w-4xl mx-auto items-center px-5 lg:px-0 flex-1">
       <ul className="flex items-center justify-end">
@@ -16,6 +26,7 @@ const Links = () => {
               <path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path>
             </svg>
           </Link>
+          <Menu show={showMenu} closed={handleCloseMenu} />
         </li>
         <li className="flex items-center ml-5">
           <Link to="/direct/inbox">
@@ -60,17 +71,19 @@ const Links = () => {
             </svg>
           </Link>
         </li>
-        <li className="flex items-center ml-5">
-          <Link
-            to="/profile"
-            className="w-8 h-8 inline-block overflow-hidden rounded-full"
+        <li
+          className="flex items-center ml-5 cursor-pointer"
+          onClick={handleOpenMenu}
+        >
+          <span
+            className={`${classes.ProfilePicture} w-8 h-8 inline-block rounded-full overflow-hidden`}
           >
             <img
               className="w-full"
-              src="/img/users/neysidev.jpeg"
               alt="Mehdi Neysi"
+              src="/img/users/neysidev.jpeg"
             />
-          </Link>
+          </span>
         </li>
       </ul>
     </div>

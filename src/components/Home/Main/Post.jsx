@@ -3,7 +3,16 @@ import { Link } from 'react-router-dom';
 
 import Story from '../../Elements/Story';
 
-const Post = ({ name, username, imgName, likes, time, status }) => {
+const Post = ({
+  name,
+  username,
+  profilePicture,
+  imgName,
+  likes,
+  time,
+  status
+}) => {
+  console.log(profilePicture);
   return (
     <article className="bg-white rounded border border-gray-200 mb-5">
       <header className="py-2 px-5 border-b border-gray-200 flex items-center justify-between">

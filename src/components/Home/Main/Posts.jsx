@@ -1,5 +1,4 @@
 import Post from './Post';
-
 const Posts = () => {
   return (
     <section>
