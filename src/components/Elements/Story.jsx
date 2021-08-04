@@ -1,19 +1,18 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const Story = ({ status, size, src, text }) => {
-  let imageBackground;
+  let imageBackground
   switch (status) {
     case 'unseen':
-      imageBackground = 'bg-gradient-to-tr from-yellow-400 to-fuchsia-600';
-      break;
+      imageBackground = 'bg-gradient-to-tr from-yellow-400 to-fuchsia-600'
+      break
     case 'seen':
-      imageBackground = 'bg-gray-200';
-      break;
+      imageBackground = 'bg-gray-200'
+      break
     default:
-      imageBackground = 'bg-transparent';
-      break;
+      imageBackground = 'bg-transparent'
+      break
   }
-           
 
   return (
     <div className={`p-0.5 rounded-full ${imageBackground}`}>
@@ -28,14 +27,14 @@ const Story = ({ status, size, src, text }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
 Story.propTypes = {
   status: PropTypes.string,
   size: PropTypes.string,
   src: PropTypes.string,
   text: PropTypes.string
-};
+}
 
-export default Story;
+export default Story

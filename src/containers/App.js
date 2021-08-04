@@ -1,14 +1,16 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Navbar from '../components/Home/Navbar/Navbar';
-import Home from '../components/Home/Home';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-const App = () => {
+import Layout from '../components/Layout'
+import Direct from '../pages/Direct/Direct'
+import Home from '../pages/Home/Home'
+
+export default function App() {
   return (
     <Router>
-      <Route path="/" exact component={Home} />
-      <Route path="/" component={Navbar} />
+      <Layout>
+        <Route path="/direct" component={Direct} />
+        <Route path="/" exact component={Home} />
+      </Layout>
     </Router>
-  );
-};
-
-export default App;
+  )
+}

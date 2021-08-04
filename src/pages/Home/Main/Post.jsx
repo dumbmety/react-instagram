@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-import Story from '../../Elements/Story'
+import Story from '../../../components/Elements/Story'
 
 const Post = ({
   name,
