@@ -1,12 +1,15 @@
-import PropTypes from 'prop-types'
+type Props = {
+  open: boolean
+  onOpen: () => void
+  onClose: () => void
+}
 
-const Search = ({ hide, open, show }) => {
+export default function Search(props: Props) {
   let content
-  if (open) {
+  if (props.open) {
     content = (
-      <div id="search-open" className="flex justify-center w-8/12 relative">
+      <div className="flex justify-center w-8/12 relative">
         <svg
-          aria-label="Search &amp; Explore"
           className="absolute left-3 text-gray-400"
           style={{ top: '50%', transform: 'translateY(-50%)' }}
           fill="#A1A1AA"
@@ -19,7 +22,7 @@ const Search = ({ hide, open, show }) => {
         </svg>
         <button
           className="absolute right-2 text-gray-400"
-          onClick={hide}
+          onClick={props.onClose}
           style={{ top: '50%', transform: 'translateY(-50%)' }}
         >
           <svg
@@ -39,7 +42,7 @@ const Search = ({ hide, open, show }) => {
           </svg>
         </button>
         <input
-          className="bg-gray-50 text-sm px-7 border border-gray-200 py-0.5 px-3 rounded w-full h-7 focus:outline-none"
+          className="bg-gray-50 text-sm px-7 border border-gray-200 py-0.5 rounded w-full h-7 focus:outline-none"
           placeholder="Search"
           ref={element => element && element.focus()}
           type="text"
@@ -50,7 +53,7 @@ const Search = ({ hide, open, show }) => {
     content = (
       <div
         id="search-close"
-        onClick={show}
+        onClick={props.onOpen}
         className="w-8/12 flex justify-center relative select-none cursor-text"
       >
         <div
@@ -77,7 +80,7 @@ const Search = ({ hide, open, show }) => {
         </div>
         <div
           id="search-close-background"
-          className="w-full bg-gray-50 border border-gray-200 py-0.5 px-3 rounded w-9/12 h-7"
+          className="w-full bg-gray-50 border border-gray-200 py-0.5 px-3 rounded h-7"
         />
       </div>
     )
@@ -85,11 +88,3 @@ const Search = ({ hide, open, show }) => {
 
   return <div className="flex flex-1 justify-center">{content}</div>
 }
-
-Search.propTypes = {
-  hide: PropTypes.func,
-  open: PropTypes.bool,
-  show: PropTypes.func
-}
-
-export default Search
