@@ -1,0 +1,15 @@
+.direct__tabs {
+	@apply flex flex-1 items-center uppercase text-sm;
+}
+
+.direct__tab {
+	@apply flex flex-1 justify-center border-b border-gray-200 text-gray-400;
+}
+
+.direct__tab.active {
+	@apply text-gray-800 border-gray-800;
+}
+
+.direct__tab a {
+	@apply inline-block py-3 px-4;
+}

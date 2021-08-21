@@ -1,0 +1,27 @@
+.no-messages-selected {
+  @apply grid place-items-center h-full;
+}
+
+.no-messages-selected > div {
+  @apply flex flex-col items-center space-y-4;
+}
+
+.no-messages-selected .icon {
+  @apply inline-block rounded-full p-5 border-4 border-gray-700 text-gray-700;
+}
+
+.no-messages-selected .content {
+  @apply text-center;
+}
+
+.no-messages-selected .content h2 {
+  @apply font-semibold text-2xl text-gray-700;
+}
+
+.no-messages-selected .content p {
+  @apply text-gray-500;
+}
+
+.no-messages-selected .action {
+  @apply py-1 px-2 text-sm rounded transition duration-150 ease-in-out text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:bg-blue-700;
+}
