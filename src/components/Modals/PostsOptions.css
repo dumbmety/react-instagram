@@ -1,0 +1,11 @@
+.posts-options {
+  @apply bg-white w-96 overflow-hidden rounded-2xl select-none text-center divide-y;
+}
+
+.posts-options .option {
+  @apply py-3 text-sm cursor-pointer hover:bg-gray-50;
+}
+
+.posts-options .option.option-red {
+  @apply font-semibold text-red-500;
+}

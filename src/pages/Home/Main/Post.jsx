@@ -2,23 +2,26 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import Story from '../../../components/Elements/Story'
+import AlertContainer from '../../../components/Alerts/AlertContainer'
 import PostsOptions from '../../../components/Modals/PostsOptions'
+import Story from '../../../components/Elements/Story'
 
-const Post = ({
-  name,
-  username,
-  profilePicture,
-  imgName,
-  likes,
-  time,
-  status
-}) => {
+const Post = ({ name, username, imgName, likes, time, status }) => {
   const [open, setOpen] = useState(false)
+  const [copied, setCopied] = useState(false)
 
   return (
     <>
-      <PostsOptions open={open} onClose={() => setOpen(false)} />
+      <PostsOptions
+        open={open}
+        copyLink={() => setCopied(true)}
+        onClose={() => setOpen(false)}
+      />
+      <AlertContainer
+        show={copied}
+        text="Link copied to clipboard."
+        onClose={() => setCopied(false)}
+      />
 
       <article className="bg-white rounded border border-gray-200 mb-5">
         <header className="py-2 px-5 border-b border-gray-200 flex items-center justify-between">
