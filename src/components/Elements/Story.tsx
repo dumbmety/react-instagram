@@ -1,9 +1,9 @@
 type Status = 'unseen' | 'seen'
 type Props = {
   status: Status
-  size: number
   src: string
   text: string
+  size: number | string
 }
 
 export default function Story(props: Props) {

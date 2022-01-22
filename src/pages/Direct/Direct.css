@@ -1,12 +1,12 @@
 section.direct {
-	@apply bg-white w-full flex divide-x-2 rounded border border-gray-200;
-	height: calc(100vh - 7rem);
+  @apply bg-white w-full flex divide-x-2 rounded border border-gray-200;
+  height: calc(100vh - 7rem);
 }
 
 section.direct .direct__left {
-	@apply w-1/3;
+  @apply w-1/3 flex flex-col;
 }
 
 section.direct .direct__right {
-	@apply w-2/3;
+  @apply w-2/3;
 }

@@ -19,6 +19,7 @@ const Posts = () => {
         status="seen"
       />
       <Post
+        status="seen"
         likes="2,245"
         time="10 hours ago"
         name="Dhanish Gajjar"

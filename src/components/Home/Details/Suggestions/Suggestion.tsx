@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom'
 
-const suggestion = props => {
-  // props
-  const { userImg, username } = props
+export default function Suggestion({
+  userImg,
+  username
+}: {
+  userImg: string
+  username: string
+}) {
   return (
     <li className="flex items-center justify-between">
       <div className="flex items-center">
@@ -26,5 +30,3 @@ const suggestion = props => {
     </li>
   )
 }
-
-export default suggestion

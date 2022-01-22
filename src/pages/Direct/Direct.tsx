@@ -1,8 +1,11 @@
 import './Direct.css'
 
-import SwitchAccounts from './SwitchAccounts'
+import { PRIMARY_MESSAGES } from '../../constants/messages'
+
 import DirectTabs from './DirectTabs'
+import MessagesList from './MessagesList'
 import NoMessagesSelected from './NoMessagesSelected'
+import SwitchAccounts from './SwitchAccounts'
 
 export default function Direct() {
   return (
@@ -10,6 +13,7 @@ export default function Direct() {
       <div className="direct__left">
         <SwitchAccounts />
         <DirectTabs />
+        <MessagesList messages={PRIMARY_MESSAGES} />
       </div>
       <div className="direct__right">
         <NoMessagesSelected />

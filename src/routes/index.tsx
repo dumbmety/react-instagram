@@ -10,6 +10,11 @@ const routes = [
     exact: true,
     path: '/direct/inbox',
     component: lazy(() => import('../pages/Direct/Direct'))
+  },
+  {
+    exact: true,
+    path: '/direct/inbox/general',
+    component: lazy(() => import('../pages/Direct/Direct'))
   }
 ]
 

@@ -1,5 +1,5 @@
 .switch-accounts {
-  @apply flex flex-1 py-3 px-4 border-b border-gray-200 items-center justify-between;
+  @apply flex py-3 px-4 border-b border-gray-200 items-center justify-between;
 }
 
 .switch-accounts .switch-account-hidden {

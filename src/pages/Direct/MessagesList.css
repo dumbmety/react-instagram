@@ -1,0 +1,27 @@
+.messages-list {
+  @apply flex-1 overflow-y-auto;
+}
+
+.messages-list .message {
+  @apply px-4 py-2 cursor-pointer select-none flex items-center space-x-2 hover:bg-gray-50;
+}
+
+.messages-list .message .message-username {
+  @apply font-medium text-sm;
+}
+
+.messages-list .message .message-user-avatar {
+  @apply w-12 h-12 rounded-full border object-cover;
+}
+
+.messages-list .message .message-content {
+  @apply flex-1;
+}
+
+.messages-list .message .message-text {
+  @apply flex space-x-1 text-xs text-gray-500;
+}
+
+.messages-list .message .message-text p {
+  @apply truncate;
+}

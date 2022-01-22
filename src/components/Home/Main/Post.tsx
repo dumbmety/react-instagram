@@ -1,18 +1,19 @@
-import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-
 import Story from '../../Elements/Story'
 
-const Post = ({
-  name,
-  username,
-  profilePicture,
-  imgName,
-  likes,
-  time,
-  status
-}) => {
-  console.log(profilePicture)
+interface Props {
+  name: string
+  username: string
+  profilePicture?: string
+  imgName: string
+  likes: string
+  time: string
+  status: 'seen' | 'unseen'
+}
+
+export default function Post(props: Props) {
+  const { name, username, imgName, likes, time, status } = props
+
   return (
     <article className="bg-white rounded border border-gray-200 mb-5">
       <header className="py-2 px-5 border-b border-gray-200 flex items-center justify-between">
@@ -155,15 +156,3 @@ const Post = ({
     </article>
   )
 }
-
-Post.propTypes = {
-  name: PropTypes.string,
-  username: PropTypes.string,
-  imgUrl: PropTypes.string,
-  imgName: PropTypes.string,
-  likes: PropTypes.string,
-  time: PropTypes.string,
-  status: PropTypes.string
-}
-
-export default Post
