@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Mobile = () => {
+export default function Mobile() {
   return (
     <div className="max-w-4xl mx-auto items-center px-5 lg:px-0 flex md:hidden justify-between">
       <Link to="/">
@@ -20,5 +20,3 @@ const Mobile = () => {
     </div>
   )
 }
-
-export default Mobile

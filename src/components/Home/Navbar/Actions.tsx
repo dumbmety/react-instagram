@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 
-const Actions = () => {
+export default function Actions() {
   return (
     <div className="fixed bottom-0 left-0 w-full bg-white flex md:hidden items-center justify-between border-t border-gray-200">
       <Link
         to="/"
-        className="flex items-center justify-center inline-block hover:bg-gray-100 w-full h-full py-2"
+        className="flex items-center justify-center hover:bg-gray-100 w-full h-full py-2"
       >
         <svg
           aria-label="Home"
@@ -19,7 +19,7 @@ const Actions = () => {
       </Link>
       <Link
         to="/search"
-        className="flex items-center justify-center inline-block hover:bg-gray-100 w-full h-full py-2"
+        className="flex items-center justify-center hover:bg-gray-100 w-full h-full py-2"
       >
         <svg
           aria-label="Search &amp; Explore"
@@ -34,7 +34,7 @@ const Actions = () => {
       </Link>
       <Link
         to="/add-post"
-        className="flex items-center justify-center inline-block hover:bg-gray-100 w-full h-full py-2"
+        className="flex items-center justify-center hover:bg-gray-100 w-full h-full py-2"
       >
         <svg
           aria-label="New Post"
@@ -50,7 +50,7 @@ const Actions = () => {
       </Link>
       <Link
         to="/activity"
-        className="flex items-center justify-center inline-block hover:bg-gray-100 w-full h-full py-2"
+        className="flex items-center justify-center hover:bg-gray-100 w-full h-full py-2"
       >
         <svg
           aria-label="Activity Feed"
@@ -64,7 +64,7 @@ const Actions = () => {
       </Link>
       <Link
         to="/profile"
-        className="flex items-center justify-center inline-block hover:bg-gray-100 w-full h-full py-2"
+        className="flex items-center justify-center hover:bg-gray-100 w-full h-full py-2"
       >
         <img
           className="w-6 h-6 items-center rounded-full object-cover"
@@ -75,5 +75,3 @@ const Actions = () => {
     </div>
   )
 }
-
-export default Actions

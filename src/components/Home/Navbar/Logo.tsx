@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const Logo = () => {
+export default function Logo() {
   return (
     <div className="flex-1">
       <Link to="/">
@@ -9,5 +9,3 @@ const Logo = () => {
     </div>
   )
 }
-
-export default Logo
