@@ -1,5 +1,5 @@
-import './SwitchAccounts.css'
-import { IoChevronDown, IoCreateOutline } from 'react-icons/io5'
+import "./SwitchAccounts.css"
+import { IoChevronDown, IoCreateOutline } from "react-icons/io5"
 
 export default function SwitchAccounts() {
   return (

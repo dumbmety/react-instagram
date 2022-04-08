@@ -1,6 +1,6 @@
-import './MessagesList.css'
+import "./MessagesList.css"
 
-import { IDirectMessage } from '../../constants/messages'
+import { IDirectMessage } from "../../constants/messages"
 
 interface Props {
   messages: IDirectMessage[]

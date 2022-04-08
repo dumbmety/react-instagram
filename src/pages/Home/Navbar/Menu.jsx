@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import Backdrop from '../Main/Backdrop'
-import classes from './Menu.module.css'
+import { Link } from "react-router-dom"
+import Backdrop from "../Main/Backdrop"
+import classes from "./Menu.module.css"
 const Menu = props => {
   // props
   const { show, closed } = props

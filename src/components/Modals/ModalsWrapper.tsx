@@ -1,6 +1,6 @@
-import './ModalsWrapper.css'
-import { useEffect } from 'react'
-import { createPortal } from 'react-dom'
+import "./ModalsWrapper.css"
+import { useEffect } from "react"
+import { createPortal } from "react-dom"
 
 type Props = {
   open: boolean
@@ -9,10 +9,10 @@ type Props = {
 
 export default function ModalsWrappers(props: Props) {
   useEffect(() => {
-    if (props.open) document.body.style.overflow = 'hidden'
+    if (props.open) document.body.style.overflow = "hidden"
 
     return () => {
-      document.body.style.overflow = ''
+      document.body.style.overflow = ""
     }
   }, [props.open])
 
@@ -28,6 +28,6 @@ export default function ModalsWrappers(props: Props) {
 
   return createPortal(
     modalChildren,
-    document.querySelector('#app-modals') || document.body
+    document.querySelector("#app-modals") || document.body
   )
 }

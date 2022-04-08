@@ -1,5 +1,5 @@
-import Posts from './Posts'
-import Story from './Story'
+import Posts from "./Posts"
+import Story from "./Story"
 
 const Main = () => {
   return (

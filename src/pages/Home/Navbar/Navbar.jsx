@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react"
 
-import Actions from './Actions'
-import Links from './Links'
-import Logo from './Logo'
-import Mobile from './Mobile'
-import Search from './Search'
+import Actions from "./Actions"
+import Links from "./Links"
+import Logo from "./Logo"
+import Mobile from "./Mobile"
+import Search from "./Search"
 
 const Navbar = () => {
   const [openSearch, setOpenSearch] = useState(false)
@@ -12,16 +12,16 @@ const Navbar = () => {
   const handleShowSearch = () => setOpenSearch(true)
   const handleHideSearch = () => setOpenSearch(false)
 
-  document.addEventListener('click', event => {
-    if (!document.querySelector('#search-open')) return
+  document.addEventListener("click", event => {
+    if (!document.querySelector("#search-open")) return
 
-    event.target.closest('#search-close') ||
-    event.target.closest('#search-close-wrapper') ||
-    event.target.closest('#search-close-background') ||
-    event.target.closest('#search-open') ||
-    event.target.closest('#search-open svg') ||
-    event.target.closest('#search-open button') ||
-    event.target.closest('#search-open input')
+    event.target.closest("#search-close") ||
+    event.target.closest("#search-close-wrapper") ||
+    event.target.closest("#search-close-background") ||
+    event.target.closest("#search-open") ||
+    event.target.closest("#search-open svg") ||
+    event.target.closest("#search-open button") ||
+    event.target.closest("#search-open input")
       ? handleShowSearch()
       : handleHideSearch()
   })

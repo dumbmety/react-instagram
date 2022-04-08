@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import classes from './Links.module.css'
-import Menu from './Menu'
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import classes from "./Links.module.css"
+import Menu from "./Menu"
 
 const Links = () => {
   const [showMenu, setShowMenu] = useState(false)

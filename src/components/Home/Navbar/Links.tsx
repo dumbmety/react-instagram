@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import { useState } from "react"
 import {
   IoHome,
   IoCompassOutline,
   IoHeartOutline,
   IoChatbubbleOutline
-} from 'react-icons/io5'
-import { Link } from 'react-router-dom'
-import Menu from './Menu'
+} from "react-icons/io5"
+import { Link } from "react-router-dom"
+import Menu from "./Menu"
 
 export default function Links() {
   const [showMenu, setShowMenu] = useState(false)

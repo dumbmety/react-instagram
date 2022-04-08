@@ -1,5 +1,7 @@
-import './index.css'
-import { render } from 'react-dom'
-import App from './containers/App'
+import "./index.css"
 
-render(<App />, document.getElementById('app'))
+import { createRoot } from "react-dom/client"
+import App from "./containers/App"
+
+const container = document.getElementById("app") as HTMLElement
+createRoot(container).render(<App />)

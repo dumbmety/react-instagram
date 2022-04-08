@@ -1,5 +1,5 @@
-import Details from './Details/Details'
-import Main from './Main/Main'
+import Details from "./Details/Details"
+import Main from "./Main/Main"
 
 export default function Home() {
   return (

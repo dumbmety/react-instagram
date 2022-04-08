@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import Story from '../../Elements/Story'
+import { Link } from "react-router-dom"
+import Story from "../../Elements/Story"
 
 interface Props {
   name: string
@@ -8,7 +8,7 @@ interface Props {
   imgName: string
   likes: string
   time: string
-  status: 'seen' | 'unseen'
+  status: "seen" | "unseen"
 }
 
 export default function Post(props: Props) {
@@ -126,7 +126,7 @@ export default function Post(props: Props) {
         <Link
           to="/"
           className="text-gray-400 uppercase"
-          style={{ fontSize: '10px' }}
+          style={{ fontSize: "10px" }}
         >
           {time}
         </Link>

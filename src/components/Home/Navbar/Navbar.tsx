@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react"
 
-import Actions from './Actions'
-import Links from './Links'
-import Logo from './Logo'
-import Mobile from './Mobile'
-import Search from './Search'
+import Actions from "./Actions"
+import Links from "./Links"
+import Logo from "./Logo"
+import Mobile from "./Mobile"
+import Search from "./Search"
 
 export default function Navbar() {
   const [openSearch, setOpenSearch] = useState<boolean>(false)

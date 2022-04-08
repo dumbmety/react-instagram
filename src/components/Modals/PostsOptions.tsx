@@ -1,5 +1,5 @@
-import './PostsOptions.css'
-import ModalsWrappers from './ModalsWrapper'
+import "./PostsOptions.css"
+import ModalsWrappers from "./ModalsWrapper"
 
 type Props = {
   open: boolean

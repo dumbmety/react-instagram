@@ -1,5 +1,5 @@
-import Suggestion from './Suggestion'
-import SuggestionsHeader from './SuggestionsHeader'
+import Suggestion from "./Suggestion"
+import SuggestionsHeader from "./SuggestionsHeader"
 
 const Suggestions = () => {
   return (

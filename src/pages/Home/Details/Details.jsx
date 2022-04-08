@@ -1,6 +1,6 @@
-import Profile from './Profile'
-import Suggestions from './Suggestions/Suggestions'
-import Footer from './Footer'
+import Profile from "./Profile"
+import Suggestions from "./Suggestions/Suggestions"
+import Footer from "./Footer"
 
 const Details = () => {
   return (

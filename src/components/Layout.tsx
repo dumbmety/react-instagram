@@ -1,11 +1,15 @@
-import React from 'react'
-import Navbar from './Home/Navbar/Navbar'
+import React from "react"
+import Navbar from "./Home/Navbar/Navbar"
 
-const Layout: React.FC = ({ children }) => (
-  <>
-    <Navbar />
-    <main className="mt-20 max-w-4xl mx-auto flex">{children}</main>
-  </>
-)
+interface LayoutProps {
+  children: React.ReactNode
+}
 
-export default Layout
+export default function Layout({ children }: LayoutProps) {
+  return (
+    <>
+      <Navbar />
+      <main className="mt-20 max-w-4xl mx-auto flex">{children}</main>
+    </>
+  )
+}

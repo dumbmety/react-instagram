@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import PropTypes from "prop-types"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
-import AlertContainer from '../../../components/Alerts/AlertContainer'
-import PostsOptions from '../../../components/Modals/PostsOptions'
-import Story from '../../../components/Elements/Story'
+import AlertContainer from "../../../components/Alerts/AlertContainer"
+import PostsOptions from "../../../components/Modals/PostsOptions"
+import Story from "../../../components/Elements/Story"
 
 const Post = ({ name, username, imgName, likes, time, status }) => {
   const [open, setOpen] = useState(false)
@@ -134,7 +134,7 @@ const Post = ({ name, username, imgName, likes, time, status }) => {
           <Link
             to="/"
             className="text-gray-400 uppercase"
-            style={{ fontSize: '10px' }}
+            style={{ fontSize: "10px" }}
           >
             {time}
           </Link>

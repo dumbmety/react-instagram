@@ -1,5 +1,5 @@
-import './NoMessagesSelected.css'
-import { IoChatbubbleOutline } from 'react-icons/io5'
+import "./NoMessagesSelected.css"
+import { IoChatbubbleOutline } from "react-icons/io5"
 
 export default function NoMessagesSelected() {
   return (

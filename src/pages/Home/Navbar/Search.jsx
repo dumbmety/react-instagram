@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 const Search = ({ hide, open, show }) => {
   let content
@@ -8,7 +8,7 @@ const Search = ({ hide, open, show }) => {
         <svg
           aria-label="Search &amp; Explore"
           className="absolute left-3 text-gray-400"
-          style={{ top: '50%', transform: 'translateY(-50%)' }}
+          style={{ top: "50%", transform: "translateY(-50%)" }}
           fill="#A1A1AA"
           height="0.7rem"
           viewBox="0 0 48 48"
@@ -20,7 +20,7 @@ const Search = ({ hide, open, show }) => {
         <button
           className="absolute right-2 text-gray-400"
           onClick={hide}
-          style={{ top: '50%', transform: 'translateY(-50%)' }}
+          style={{ top: "50%", transform: "translateY(-50%)" }}
         >
           <svg
             className="absolute right-0 text-gray-400"
@@ -28,7 +28,7 @@ const Search = ({ hide, open, show }) => {
             height="0.9rem"
             strokeWidth="0"
             stroke="currentColor"
-            style={{ top: '50%', transform: 'translateY(-50%)' }}
+            style={{ top: "50%", transform: "translateY(-50%)" }}
             viewBox="0 0 24 24"
             width="0.9rem"
           >
@@ -57,9 +57,9 @@ const Search = ({ hide, open, show }) => {
           id="search-close-wrapper"
           className="absolute flex items-center"
           style={{
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
           }}
         >
           <svg

@@ -11,7 +11,7 @@ export default function Search(props: Props) {
       <div className="flex justify-center w-8/12 relative">
         <svg
           className="absolute left-3 text-gray-400"
-          style={{ top: '50%', transform: 'translateY(-50%)' }}
+          style={{ top: "50%", transform: "translateY(-50%)" }}
           fill="#A1A1AA"
           height="0.7rem"
           viewBox="0 0 48 48"
@@ -23,7 +23,7 @@ export default function Search(props: Props) {
         <button
           className="absolute right-2 text-gray-400"
           onClick={props.onClose}
-          style={{ top: '50%', transform: 'translateY(-50%)' }}
+          style={{ top: "50%", transform: "translateY(-50%)" }}
         >
           <svg
             className="absolute right-0 text-gray-400"
@@ -31,7 +31,7 @@ export default function Search(props: Props) {
             height="0.9rem"
             strokeWidth="0"
             stroke="currentColor"
-            style={{ top: '50%', transform: 'translateY(-50%)' }}
+            style={{ top: "50%", transform: "translateY(-50%)" }}
             viewBox="0 0 24 24"
             width="0.9rem"
           >
@@ -60,9 +60,9 @@ export default function Search(props: Props) {
           id="search-close-wrapper"
           className="absolute flex items-center"
           style={{
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)'
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
           }}
         >
           <svg
